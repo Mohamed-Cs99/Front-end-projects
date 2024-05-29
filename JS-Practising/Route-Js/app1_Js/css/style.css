@@ -1,0 +1,43 @@
+#home {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.box {
+    border: solid 3px #f3f3f3;
+}
+
+.item {
+    padding-top: 5px;
+    margin-top: 5px;
+    border: solid 3px #f3f3f3;
+
+}
+
+.caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#data
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.mainColor
+{
+    color: aqua;
+}
+
+.member img 
+{
+    height:100%;
+}
+
+span 
+{
+    font-size: 120%;
+    font-weight:400;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>First CRUD App</title>
+</head>
+
+<body>
+
+    <section id="home" class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container bg-light pb-4">
+            <h1 class="bg-dark text-center py-3 text-white">Car Spare-Parts </h1>
+
+            <div class="box px-5 py-3 mt-3 w-75 mx-auto">
+                <div class="row my-2">
+                    <div class="col-md-12">
+                        <div class="item">
+                            <label for="pName">Part Name : </label>
+                            <input type="text" class="form-control" name="pName" id="pName">
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-md-6">
+                        <div class="item">
+                            <label for="id">Part ID : </label>
+                            <input type="number" class="form-control" name="id" id="id">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item">
+                            <label for="type">Car Type : </label>
+                            <select class="form-control" name="type" id="type">
+                                <option selected></option>
+                                <option value="Bmw">BMW</option>
+                                <option value="MERCEDS">MERCEDIS</option>
+                                <option value="LANCER">lANCER</option>
+                                <option value="TIGO3">TIGO3</option>
+                                <option value="MG">MG</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="row my-2">
+                    <div class="col-md-6">
+                        <div class="item">
+                            <label for="price">Price : </label>
+                            <input type="number" class="form-control" name="price" id="price">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item">
+                            <label for="quantity">Quantity : </label>
+                            <input type="number" class="form-control" name="quantity" id="quantity">
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-md-12">
+                        <div class="item">
+                            <label for="model">Select Model:</label>
+                            <select name="model" class="form-control" id="model">
+                                <option selected></option>
+                                <option value="Model1">Model1</option>
+                                <option value="Model2">Model2</option>
+                                <option value="Model3">Model3</option>
+                                <option value="Model4">Model4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row my-2">
+                    <div class="col-md-12">
+                        <div class="item">
+                            <label for="Description">Description: </label>
+                            <textarea name="Description" id="Description" class="form-control" cols="30"
+                                rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg text-center">
+                    <button onclick="addNewItem()" class="btn btn-info mt-4 font-weight-bolder">Add New Item</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="data">
+        <div class="container pb-5">
+            <input onkeyup="Search(this.value)" class="form-control w-50 m-auto my-2" type="text" id="searchInput" name="searchInput" placeholder="Search By Name....">
+            <div class="row"  id="demo">
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/crud.js"></script>
+</body>
+
+</html>
